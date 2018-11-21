@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>C Syntax</title>
+
+<link rel="stylesheet" type="text/css" href="menu.css" />
+
+<style>
+
+body{
+  font-size:20px;
+}
+
+
+table,th,td{
+		border:2px solid black;
+}
+
+th{
+	 background-color: black;
+	 color:white;
+}
+
+table{
+	font-size:20px;
+	font-family:Verdana;
+	border-collapse:collapse;
+	text-align:center;
+	width:80%;
+}
+tr:nth-child(even){
+	background-color:#f2f2f2;
+}
+
+.header {
+  padding: 2px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 20px;
+  font-family: cursive;
+}
+
+.basics{
+	font-family: Impact, Helvetica, sans-serif;
+	text-align:center;
+	font-size: 40px;
+	height: 70px 
+}
+
+p {
+	font-size: 20px;
+	font-family:verdana;
+
+}
+
+h2{
+	font-family: Impact, Helvetica, sans-serif;
+}
+
+</style>
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+	<h1>KNOWLEDGE REALM</h1>
+</div>
+
+
+ <ul>
+  <li><a href="Homepage.html">Home</a></li>
+
+  <li class="dropdown">
+    <a class="dropbtn" href="CHomepage.html">C</a>
+    <div class="dropdown-content">
+      
+      <a href="basicC.html">Basics</a>
+      <a href="loopsC.html">Loops</a>
+      <a href="functionC.html">Functions</a>
+   </div>
+  </li>
+  <li class="dropdown">
+    <a class="dropbtn" href="PythonHomepage.html">Python</a>
+    <div class="dropdown-content">
+      
+      <a href="basicP.html">Basics</a>
+      <a href="loopsP.html">Loops</a>
+      <a href="functonP.html">Functions</a>
+   </div>
+  </li>
+  <li class="dropdown">
+    <a class="dropbtn" href="RHomepage.html">R</a>
+    <div class="dropdown-content">
+      
+      <a href="basicR.html">Basics</a>
+      <a href="loopsR.html">Loops</a>
+      <a href="functonR.html">Functions</a>
+   </div>
+
+  </li>
+  <li><a href="Quiz.html">Quiz</a></li>
+  <li><a href="subscribe.html">Subscribe</a></li>  
+  <li><a href="About_us.html">About Us</a></li>
+</ul>
+
+
+
+<div class="basics">
+	<h2>The Basics</h2>
+</div>
+
+
+
+
+
+<p>
+C is a robust language with rich set of built-in functions and operators that can be used to write any complex program. The C compiler combines the capabilities of an assembly language with features of a high-level language. Programs Written in C are efficient and fast.Every statement in C must end with a semilcolon.C being the most basic language,is easy to learn and implement.</p>
+
+<h2>Input and output</h2>
+
+<p>	C provides built-in functions that are readily available at the preprocessor directive. Some of the functions like <b><i>scanf()</i></b> and <b><i>printf()</i></b> are widely used for standard input and output operations respectively.</p>
+
+<p>The printf() function is used to output data to the standard output device (screen). The syntax of the printf() function is:</p>
+<p><b>printf("Today the %d of November, is a wonderful day",16)</b></p>
+<p>In the above code "%d" , is known as a format specifier.Every Datatype has a specific datatype,the details of which will be explained later.</p>
+
+<p>The scanf() function is used to take in values for variables.The input is taken based on the datatype of the variables declared. The syntax of the scanf() function is:</p>
+<p><b>scanf("%d",&a)</b></p>
+<p>"a", is a variable of type interger.& had to preceed the variable in the scanf() function</p>
+
+<br/>
+<img src="cbasics.jpg">
+<br/>
+
+<h2>Data types</h2>
+<p>Each variable in C has an associated data type. Each data type requires different amounts of memory and has some specific operations which can be performed over it. Let us briefly describe them one by one:<br/><b>char:</b> The most basic data type in C. It stores a single character and requires a single byte of memory in almost all compilers.
+<br/><b>int:</b>As the name suggests, an int variable is used to store an integer.<br/>
+<b>float:</b> It is used to store decimal numbers (numbers with floating point value) with single precision.<br/><b>
+double:</b> It is used to store decimal numbers (numbers with floating point value) with double precision.</p>
+
+
+<br/><br/>
+
+
+<table align="center">
+	<tr>
+		<th>DataType</th>
+		<th>Memory</th>
+		<th>Range</th>
+		<th>Format Specifier</th>
+	</tr>
+	<tr>
+		<td>char</td>
+		<td>1</td>
+		<td>-128 to 127 </td>
+		<td> %c </td>
+	</tr>
+	<tr>
+		<td>int</td>
+		<td>4</td>
+		<td>-2,147,483,648 to 2,147,483,647 </td>
+		<td> %d </td>
+	</tr>
+	<tr>
+		<td>Float</td>
+		<td>4</td>
+		<td> ≈7.22 decimal digits of precision,</td>
+		<td> %f</td>
+	</tr>
+	<tr>
+		<td> unsigned int</td>
+		<td>4</td>
+		<td> 0 to 4,294,967,295 </td>
+		<td> %u </td>
+	</tr>
+	<tr>
+		<td>Unsigned char</td>
+		<td>1</td>
+		<td> 0 t0 127</td>
+		<td> %c</td>
+	</tr>
+	<tr>
+		<td>Float</td>
+		<td>4</td>
+		<td> ≈7.22 decimal digits of precision,</td>
+		<td> %f</td>
+	</tr>
+		<tr>
+		<td>Double</td>
+		<td>8</td>
+		<td> ≈15.95 decimal digits of precision,</td>
+		<td> %lf</td>
+	</tr>
+</table>
+
+<br/><br/><br/><br/>
+
+</body>
+</html>

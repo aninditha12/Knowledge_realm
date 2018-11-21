@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>R functions</title>
+<link rel="stylesheet" type="text/css" href="menu.css" />
+
+<style>
+
+body{
+  font-size:20px;
+}
+
+.header {
+  padding: 2px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 20px;
+  font-family: cursive;
+}
+
+.basics{
+	font-family: Impact, Helvetica, sans-serif;
+	text-align:center;
+	font-size: 40px;
+	height: 70px 
+}
+
+p {
+	font-size: 20px;
+	font-family:verdana;
+
+}
+
+h2{
+	font-family: Impact, Helvetica, sans-serif;
+}
+
+</style>
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+	<h1>KNOWLEDGE REALM</h1>
+</div>
+
+
+  <ul>
+  <li><a href="Homepage.html">Home</a></li>
+
+  <li class="dropdown">
+    <a class="dropbtn" href="CHomepage.html">C</a>
+    <div class="dropdown-content">
+      
+      <a href="basicC.html">Basics</a>
+      <a href="loopsC.html">Loops</a>
+      <a href="functionC.html">Functions</a>
+   </div>
+  </li>
+  <li class="dropdown">
+    <a class="dropbtn" href="PythonHomepage.html">Python</a>
+    <div class="dropdown-content">
+      
+      <a href="basicP.html">Basics</a>
+      <a href="loopsP.html">Loops</a>
+      <a href="functonP.html">Functions</a>
+   </div>
+  </li>
+  <li class="dropdown">
+    <a class="dropbtn" href="RHomepage.html">R</a>
+    <div class="dropdown-content">
+      
+      <a href="basicR.html">Basics</a>
+      <a href="loopsR.html">Loops</a>
+      <a href="functonR.html">Functions</a>
+   </div>
+
+  </li>
+  <li><a href="Quiz.html">Quiz</a></li>
+  <li><a href="subscribe.html">Subscribe</a></li>  
+  <li><a href="About_us.html">About Us</a></li>
+</ul>
+
+
+
+<div class="basics">
+	<h2>User Defined Functions</h2>
+</div>
+
+<p>
+A computer language consists of two important components namely data and function.
+<br/>
+A function is a self contained code module that takes one or more data variables as input, implements an algorithm to accomplish a particular task and returns a result. This closely follows the definition of mathematical function which takes one or more variables at the input and returns a single value as result.
+<br/><br/>
+The code lines that can accomplish a task are encapsulated in a function inside a program. Whenever that task has to be accomplished with a data, a call to the function is made, and the data is passed to it. The fuction carries out the task and returns a result. Typically the function call is just a line of code. Suppose we want to accomplish same taks 10 times with new sets of data. We juat have to call the function 10 times with new data, and get the result. Without functions, we may have to type the code lines for the task again and again 10 times!.
+<br/><br/>
+Functions are written in a generic format without keeping a particular program in mind. This makes a single function useful to many different programs. Each function for completing one task. If your code can generate data in a particular type as demanded by the function, you can call the function from your code.
+<br/><br/>
+Many functions can be combined to form a library , which can be attached to a program and used. For example, the functions performing various tasks related to string operations can form a library. Similarly, functions for basic maths operations (like taking square root or exponential of a given number) can be combined into a library.
+</p>
+<h2> Syntax</h2>
+<p>
+	An R function takes objects and data variables as function argument and returns an object.<br/>
+The function in R has the following structure:<br/>
+<b><i>myfunction <- function(argument1, argument2, ...) {<br/>
+statements<br/>
+return(object)<br/>
+}<br/><br/></i></b>
+
+Here, function is a key word used for defining the function. The entities named argument1, argument2 etc. are function arguments. They can be either simple variable types or objects like arrays, frames and lists. The comma separated list of function arguments is placed inside a pair of brackets next to the function keyword.
+<br/>
+Inside the function, the arguments passed in are used for computation. The statements refers to such lines of script. Finally, the function passes the computed object through a return statement.
+<br/>
+All the lines of the code inside the function are enclosed in a pair of curly brackets following the keyword function. The name myfunction refers to the name given to the function. When a function call is to be made, it will be called with this name.
+<br/><br/>
+Once a function is defined, it can be called with the general syntax,<br/>
+  <i><b>objectName <- myfunction(arg1, arg2, ...)</b></i>
+<br/>
+where arg1,arg2,... are the variables of typescreated inside the program before the call. The types of arg1,arg2,... should be exactly same as the types of argument1, argument2,... respectively. Otherwise, compiler generates error.
+<br/><br/>
+<img src="func.jpg">
+</body>
+</html>

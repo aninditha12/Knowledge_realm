@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>python Syntax</title>
+
+<link rel="stylesheet" type="text/css" href="menu.css" />
+
+<style>
+
+body{
+  font-size:20px;
+}
+
+
+table,th,td{
+		border:2px solid black;
+}
+
+th{
+	 background-color: black;
+	 color:white;
+}
+
+table{
+	font-size:20px;
+	font-family:Verdana;
+	border-collapse:collapse;
+	text-align:center;
+	width:80%;
+}
+tr:nth-child(even){
+	background-color:#f2f2f2;
+}
+
+.header {
+  padding: 2px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 20px;
+  font-family: cursive;
+}
+
+.basics{
+	font-family: Impact, Helvetica, sans-serif;
+	text-align:center;
+	font-size: 40px;
+	height: 70px 
+}
+
+p {
+	font-size: 20px;
+	font-family:verdana;
+
+}
+
+h2{
+	font-family: Impact, Helvetica, sans-serif;
+}
+
+</style>
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+	<h1>KNOWLEDGE REALM</h1>
+</div>
+
+
+ <ul>
+  <li><a href="Homepage.html">Home</a></li>
+
+  <li class="dropdown">
+    <a class="dropbtn" href="CHomepage.html">C</a>
+    <div class="dropdown-content">
+      
+      <a href="basicC.html">Basics</a>
+      <a href="loopsC.html">Loops</a>
+      <a href="functionC.html">Functions</a>
+   </div>
+  </li>
+  <li class="dropdown">
+    <a class="dropbtn" href="PythonHomepage.html">Python</a>
+    <div class="dropdown-content">
+      
+      <a href="basicP.html">Basics</a>
+      <a href="loopsP.html">Loops</a>
+      <a href="functonP.html">Functions</a>
+   </div>
+  </li>
+  <li class="dropdown">
+    <a class="dropbtn" href="RHomepage.html">R</a>
+    <div class="dropdown-content">
+      
+      <a href="basicR.html">Basics</a>
+      <a href="loopsR.html">Loops</a>
+      <a href="functonR.html">Functions</a>
+   </div>
+
+  </li>
+  <li><a href="Quiz.html">Quiz</a></li>
+  <li><a href="subscribe.html">Subscribe</a></li>  
+  <li><a href="About_us.html">About Us</a></li>
+</ul>
+
+
+
+
+<div class="basics">
+	<h2>Loops</h2>
+</div>
+
+
+
+
+
+<p>
+Loops are a very impotant part of any programming language. They perform an action repeatedly till the terminating condition is satisfied. Python offers two loops: the <b><i>for loop</i></b> and <b><i>while loop</i></b>. Conditional statements will be covered first, followed by loops.
+</p>
+
+<h2>Conditional Statements</h2>
+
+<p>Conditional statements are used to perform different actions based on the conditions satisfied. This can be done with the help of an <b><i>if-else</i></b> ladder. The following image depicts the syntax of the if statement.</p>
+
+<br/>
+<center><img src="pythonif.jpg"></center>
+<br/>
+
+<p>If all the conditions fail, then the actions in the else statement are executed.</p>
+
+<br/>
+
+<h2>For Loop</h2>
+<p>A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string). This is less like the for keyword in other programming language, and works more like an iterator method as found in other object-orientated programming languages. With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc. Iterating over a sequence is called traversal.<br/></p>
+<p>The syntax is as follows.</p>
+<pre><b>	for val in sequence:
+		Body of for</b></pre>
+
+
+<p>Here, val is the variable that takes the value of the item inside the sequence on each iteration. Loop continues until we reach the last item in the sequence. The body of for loop is separated from the rest of the code using indentation. An example is given below.</p>
+
+<center><img src="pythfor.jpg"></center>
+
+<br/>
+
+<h2>While Loop</h2>
+<p>The while loop in Python is used to iterate over a block of code as long as the test expression (condition) is true. We generally use this loop when we don't know beforehand, the number of times to iterate.<br/></p>
+<p>The syntax is as follows.</p>
+<pre><b>	while test_expression:
+		Body of while</b></pre>
+
+
+<p>n while loop, test expression is checked first. The body of the loop is entered only if the test_expression evaluates to True. After one iteration, the test expression is checked again. This process continues until the test_expression evaluates to False. Python interprets any non-zero value as True. None and 0 are interpreted as False. An example is given below.</p>
+
+<center><img src="pythwhile.jpg"></center>
+
+<br/>
+
+
+<br/><br/><br/><br/>
+
+</body>
+</html>

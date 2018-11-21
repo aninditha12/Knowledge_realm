@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Python functions</title>
+
+<link rel="stylesheet" type="text/css" href="menu.css" />
+
+<style>
+
+body{
+  font-size:20px;
+}
+
+
+table,th,td{
+		border:2px solid black;
+}
+
+th{
+	 background-color: black;
+	 color:white;
+}
+
+table{
+	font-size:20px;
+	font-family:Verdana;
+	border-collapse:collapse;
+	text-align:center;
+	width:80%;
+}
+tr:nth-child(even){
+	background-color:#f2f2f2;
+}
+
+.header {
+  padding: 2px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 20px;
+  font-family: cursive;
+}
+
+.basics{
+	font-family: Impact, Helvetica, sans-serif;
+	text-align:center;
+	font-size: 40px;
+	height: 70px 
+}
+
+p {
+	font-size: 20px;
+	font-family:verdana;
+
+}
+
+h2{
+	font-family: Impact, Helvetica, sans-serif;
+}
+
+</style>
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+	<h1>KNOWLEDGE REALM</h1>
+</div>
+
+
+ <ul>
+  <li><a href="Homepage.html">Home</a></li>
+
+  <li class="dropdown">
+    <a class="dropbtn" href="CHomepage.html">C</a>
+    <div class="dropdown-content">
+      
+      <a href="basicC.html">Basics</a>
+      <a href="loopsC.html">Loops</a>
+      <a href="functionC.html">Functions</a>
+   </div>
+  </li>
+  <li class="dropdown">
+    <a class="dropbtn" href="PythonHomepage.html">Python</a>
+    <div class="dropdown-content">
+      
+      <a href="basicP.html">Basics</a>
+      <a href="loopsP.html">Loops</a>
+      <a href="functonP.html">Functions</a>
+   </div>
+  </li>
+  <li class="dropdown">
+    <a class="dropbtn" href="RHomepage.html">R</a>
+    <div class="dropdown-content">
+      
+      <a href="basicR.html">Basics</a>
+      <a href="loopsR.html">Loops</a>
+      <a href="functonR.html">Functions</a>
+   </div>
+
+  </li>
+  <li><a href="Quiz.html">Quiz</a></li>
+  <li><a href="subscribe.html">Subscribe</a></li>  
+  <li><a href="About_us.html">About Us</a></li>
+</ul>
+
+
+
+
+<div class="basics">
+	<h2>Functions</h2>
+</div>
+
+
+
+
+
+<p>
+A function is a block of code which only runs when it is called. You can pass data, known as parameters, into a function. A function can return data as a result. Functions help break our program into smaller and modular chunks. As our program grows larger and larger, functions make it more organized and manageable. Furthermore, it avoids repetition and makes the code reusable.
+</p>
+
+<h2>Creating a function</h2>
+
+<p>	In Python a function is defined using the def keyword. Information can be passed to functions as parameter. Parameters are specified after the function name, inside the parentheses. You can add as many parameters as you want, just separate them with a comma.</p>
+
+<p>The syntax is as follows.</p>
+<pre><b>	def function_name(parameters):
+		statement(s)</b></pre>
+
+<p>Keyword def marks the start of function header. A function name to uniquely identify it. Function naming follows the same rules of writing identifiers in Python. Parameters (arguments) through which we pass values to a function. They are optional. A colon (:) to mark the end of function header. One or more valid python statements that make up the function body. Statements must have same indentation level. An optional return statement to return a value from the function.</p>
+
+<br/>
+
+<h2>Calling a function</h2>
+<p>Once we have defined a function, we can call it from another function, program or even the Python prompt. To call a function we simply type the function name with appropriate parameters. The following example illustrates the same.</p>
+
+<center><img src="pythfunc.jpg"></center>
+
+<br/>
+<p>Scope of a variable is the portion of a program where the variable is recognized. Parameters and variables defined inside a function is not visible from outside. Hence, they have a local scope. Lifetime of a variable is the period throughout which the variable exits in the memory. The lifetime of variables inside a function is as long as the function executes. They are destroyed once we return from the function. Hence, a function does not remember the value of a variable from its previous calls.</p>
+<br/>
+
+
+<br/><br/>
+
+</body>
+</html>

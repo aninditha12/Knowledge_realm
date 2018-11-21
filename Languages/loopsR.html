@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>R loops</title>
+<link rel="stylesheet" type="text/css" href="menu.css" />
+
+<style>
+
+body{
+  font-size:20px;
+}
+
+.header {
+  padding: 2px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 20px;
+  font-family: cursive;
+}
+
+.basics{
+	font-family: Impact, Helvetica, sans-serif;
+	text-align:center;
+	font-size: 40px;
+	height: 70px 
+}
+
+p {
+	font-size: 20px;
+	font-family:verdana;
+
+}
+
+h2{
+	font-family: Impact, Helvetica, sans-serif;
+}
+
+</style>
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+	<h1>KNOWLEDGE REALM</h1>
+</div>
+
+
+<ul>
+  <li><a href="Homepage.html">Home</a></li>
+
+  <li class="dropdown">
+    <a class="dropbtn" href="CHomepage.html">C</a>
+    <div class="dropdown-content">
+      
+      <a href="basicC.html">Basics</a>
+      <a href="loopsC.html">Loops</a>
+      <a href="functionC.html">Functions</a>
+   </div>
+  </li>
+  <li class="dropdown">
+    <a class="dropbtn" href="PythonHomepage.html">Python</a>
+    <div class="dropdown-content">
+      
+      <a href="basicP.html">Basics</a>
+      <a href="loopsP.html">Loops</a>
+      <a href="functonP.html">Functions</a>
+   </div>
+  </li>
+  <li class="dropdown">
+    <a class="dropbtn" href="RHomepage.html">R</a>
+    <div class="dropdown-content">
+      
+      <a href="basicR.html">Basics</a>
+      <a href="loopsR.html">Loops</a>
+      <a href="functonR.html">Functions</a>
+   </div>
+
+  </li>
+  <li><a href="Quiz.html">Quiz</a></li>
+  <li><a href="subscribe.html">Subscribe</a></li>  
+  <li><a href="About_us.html">About Us</a></li>
+</ul>
+
+
+
+<div class="basics">
+	<h2>Loops</h2>
+</div>
+
+<p>
+
+</p>
+
+<h2>if-else statements</h2>
+
+<p>The <b>if</b> conditional statement helps us to execute certain commands subject to the condition that a given statement is TRUE.<br/>
+The general syntax of 'if' statement is given by-<br/>
+        if(condition) statement 
+<br/><br/>
+eg: <br/>if(a>c) <br/>
+		print("a is greater than c")
+		<br/><br/>
+Here <b>if</b> is a reserved key word. the condition typed inside braces refers to a logical statement. The statement refers to a single or a set of statements which will be executed if the condition is true.
+First the condition is logically evaluated and if it evaluates to TRUE, the statement is executed. If the condition evaluates to FALSE, the statement is not executed. </p>
+
+<p>When the condition in the <b>if</b> statement fails, we can provide an alternate path with an <b>else</b> statement followed by if. The general format is as follows:<br/>
+<i><b>if(condition) statement1 else statement2</b></i>
+<br/>
+When condition evaluates to TRUE, statement1 is executed. When it fails, statement2 is executed. </p>
+
+<br/>
+
+<h2>for loop</h2>
+<p>The <b>for</b> loop is useful for iteratively executing a group of instructions. The general format is given by<br/>
+         <i><b>for(variation in a sequence) expression</b> </i>
+<br/><br/>
+eg:<br/>
+for(i in 1:10)<br>
+{<br/>
+print(i)<br/>
+}<br/><br/>
+A sequence inside the pair of braces next to for is considered. For every element in the sequence, the expression will be evaluated. The expression can be either a simple statement or a set of complex statements which may or may not involve the iterated elements. <br/><br/> The for loop in R can be used in two ways. In the first way, we can access the elements of a vector directly though an iteration inside a for statement. <br/>
+<i><b>for(variation in vector_name) expression</b></i><br/>
+In the second method, elements of a vector can be iteratively accessed inside the for loop by the index generated inside. <br/>
+<i><b>for(variation in 1:length(vector_name)) expression</b></i>
+ </p>
+<br/>
+<h2>while loop</h2>
+<p>The <b>while</b> loop is used for executing a statement until a condition is valid. The loop terminates when the condition fails. The general format is<br/>
+       <i><b> while( condition ) expression</b> </i>
+<br/><br/>
+eg: <br/>
+while(num>0)<br/>
+{<br/>
+num=num-10<br/>
+}<br/><br/>
+First the condition is tested. If it is TRUE, the expression is executed, which generally modifies the condition. Then, the condition is again tested. If it is TRUE, the expression is executed. This goes on until the condition fails. When this happens, the while loop is terminated.</p>
+
+
+</body>
+</html>

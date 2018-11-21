@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="menu.css" />
+
+<style>
+		
+	.bg {
+    
+    background-image: url("download.jpg");
+
+    
+    height: 100%; 
+    width: 100%;
+    filter: blur(2px);    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   /* margin: 1;*/
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: black;
+}
+.container {
+  
+  background-color: rgba(50,50,50, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  padding: 20px;
+  text-align: center;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+input[type=text],input[type=password],input[type=email]{
+width:100%;
+padding: 15px;
+margin:5px 0px 22px 0px;
+border:none;
+background: #f1f1f1;
+	
+}
+.top-left{
+    position: absolute;
+    top: 5px;
+    left: 0px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+input[type=text],input[type=password],input[type=email]:focus{
+background-color: #ddd;
+outline:none;}
+
+</style>
+</head>
+
+<body>
+	<ul>
+  <li><a href="Homepage.html">Home</a></li>
+
+  <li class="dropdown">
+    <a class="dropbtn" href="CHomepage.html">C</a>
+    <div class="dropdown-content">
+      
+      <a href="basicC.html">Basics</a>
+      <a href="loopsC.html">Loops</a>
+      <a href="functionC.html">Functions</a>
+   </div>
+  </li>
+  <li class="dropdown">
+    <a class="dropbtn" href="PythonHomepage.html">Python</a>
+    <div class="dropdown-content">
+      
+      <a href="basicP.html">Basics</a>
+      <a href="loopsP.html">Loops</a>
+      <a href="functonP.html">Functions</a>
+   </div>
+  </li>
+  <li class="dropdown">
+    <a class="dropbtn" href="RHomepage.html">R</a>
+    <div class="dropdown-content">
+      
+      <a href="basicR.html">Basics</a>
+      <a href="loopsR.html">Loops</a>
+      <a href="functonR.html">Functions</a>
+   </div>
+
+  </li>
+  <li><a href="Quiz.html">Quiz</a></li> 
+  <li><a href="About_us.html">About Us</a></li>
+</ul>
+
+  
+  <title  style>subscribe</title>
+
+	<div class="bg" ></div>
+  <form action="sqlsub1.php" method="post" class="container" id="subscribe" style="float:center" style="margin:3">
+  	<div id="aaa">
+    <h1>SUBSCRIBE</h1>
+		<fieldset>
+		
+		<label><b>First-Name: </b><input type="text" name="firstname" placeholder="Enter Firstname"></label><br><br>
+		<label><b>Last-Name: </b><input type="text" name="lastname" placeholder="Enter Lastname"></label><br><br>
+		<label><b>Email: </b><input type="email" name="email" placeholder="Enter Email"></label><br><br>
+		<label><b>Phone: </b><input type="text" name="number" placeholder="Enter Phone number"></label><br><br>
+	    </fieldset><br><br>
+
+  <input type="submit" name="subscribe" value="Subscribe" style="font-size:30px" style="color: black" >
+</div>
+	</form>
+
+</body>
+</html>

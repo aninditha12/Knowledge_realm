@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>python Syntax</title>
+
+<link rel="stylesheet" type="text/css" href="menu.css" />
+
+<style>
+
+body{
+  font-size:20px;
+}
+
+
+table,th,td{
+		border:2px solid black;
+}
+
+th{
+	 background-color: black;
+	 color:white;
+}
+
+table{
+	font-size:20px;
+	font-family:Verdana;
+	border-collapse:collapse;
+	text-align:center;
+	width:80%;
+}
+tr:nth-child(even){
+	background-color:#f2f2f2;
+}
+
+.header {
+  padding: 2px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 20px;
+  font-family: cursive;
+}
+
+.basics{
+	font-family: Impact, Helvetica, sans-serif;
+	text-align:center;
+	font-size: 40px;
+	height: 70px 
+}
+
+p {
+	font-size: 20px;
+	font-family:verdana;
+
+}
+
+h2{
+	font-family: Impact, Helvetica, sans-serif;
+}
+
+</style>
+</head>
+
+
+
+
+<body>
+
+
+<div class="header">
+	<h1>KNOWLEDGE REALM</h1>
+</div>
+
+
+<ul>
+  <li><a href="Homepage.html">Home</a></li>
+
+  <li class="dropdown">
+    <a class="dropbtn" href="CHomepage.html">C</a>
+    <div class="dropdown-content">
+      
+      <a href="basicC.html">Basics</a>
+      <a href="loopsC.html">Loops</a>
+      <a href="functionC.html">Functions</a>
+   </div>
+  </li>
+  <li class="dropdown">
+    <a class="dropbtn" href="PythonHomepage.html">Python</a>
+    <div class="dropdown-content">
+      
+      <a href="basicP.html">Basics</a>
+      <a href="loopsP.html">Loops</a>
+      <a href="functonP.html">Functions</a>
+   </div>
+  </li>
+  <li class="dropdown">
+    <a class="dropbtn" href="RHomepage.html">R</a>
+    <div class="dropdown-content">
+      
+      <a href="basicR.html">Basics</a>
+      <a href="loopsR.html">Loops</a>
+      <a href="functonR.html">Functions</a>
+   </div>
+
+  </li>
+  <li><a href="Quiz.html">Quiz</a></li>
+  <li><a href="subscribe.html">Subscribe</a></li>  
+  <li><a href="About_us.html">About Us</a></li>
+</ul>
+
+
+
+
+<div class="basics">
+	<h2>The Basics</h2>
+</div>
+
+
+
+
+
+<p>
+R is a programming language as well as a software environment for statistical computing with excellent libraries for statistical analysis, graphics and data mining. It is maintained under GNU project and is freely available for download. R is designed to be highly extendable through libraries created and added by the users.
+To execute a file in R, the command 'source(file_name.r)' is used in the terminal.
+</p>
+
+<h2>Input and output</h2>
+
+<p>	R has many built-in functions and library packages that are readily available. Some of the functions like <b><i>scan()</i></b> and <b><i>print()</i></b> are widely used for standard input and output operations respectively.</p>
+
+<p>The print() function is used to output data to the standard output device (screen). The syntax of the print() function is:</p>
+<p><b>print(objects_to_print)</b></p>
+<p>The cat() function is similar to the print() function. It is used when we don't want the output number to be printed alongside the output. cat() also recognises escape sequences whereas print() does not. The syntax of the cat() function is:</p>
+<p><b>cat(objects_to_print , file = "", sep = " ", fill = FALSE, labels = NULL,append = FALSE)</b></p>
+<img src="R_print.jpg">
+<p>The scan() function is used to take in values for variables. R does not have any format specifiers for different data types. The syntax of the scan() function is:</p>
+<p><b>variable_name <- scan()</b></p>
+<p>The readline() function is also used sometimes to input strings. The syntax of the readline() function is:</p>
+<p><b>variable_name <- readline()</b></p>
+<br/>
+<img src="R_scan.jpg">
+<br/>
+
+<h2>Data types</h2>
+<p>Numeric,integers,complex, logical and character are the basic data types in R. <br/> Decimal values are referred as numeric data types in R. This is the default working out data type.<br/>If you want to create any integer variable in R, you have to invoke the as.integer() function to define any integer type data.<br/>A complex value for coding in R can be defined using the pure imaginary values 'i'.<br/>A logical value is mostly created when comparison between variables are done. eg: 'c=a>b'<br/>A character object can be used for representing string values in R. You have to convert objects into character values using the as.character() function within your code.<br/>Vector, factor, array, matrix, dataframe and list are the further data types. They are widely used to perform various operations.</p>
+
+
+<br/><br/>
+
+
+<table align="center">
+	<tr>
+		<th>Object</th>
+		<th>Possible modes</th>
+		<th>Several modes possible in the same object?</th>
+	</tr>
+	<tr>
+		<td>vector</td>
+		<td>numeric,character,complex,logical</td>
+		<td>no</td>
+	</tr>
+	<tr>
+		<td>factor</td>
+		<td>numeric,character</td>
+		<td>no</td>
+	</tr>
+	<tr>
+		<td>array</td>
+		<td>numeric,character,complex,logical</td>
+		<td>no</td>
+	</tr>
+	<tr>
+		<td>matrix</td>
+		<td>numeric,character,complex,logical</td>
+		<td>No</td>
+	</tr>
+	<tr>
+		<td>dataframe</td>
+		<td>numeric,character,complex,logical</td>
+		<td>Yes</td>
+	</tr>
+	<tr>
+		<td>list</td>
+		<td>numeric,character,complex,logical,function,expression,formula</td>
+		<td>Yes</td>
+</table>
+
+<br/><br/><br/><br/>
+
+</body>
+</html>
